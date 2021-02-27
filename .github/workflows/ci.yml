@@ -13,25 +13,8 @@ on:
 jobs:
   lint-next:
     runs-on: ubuntu-latest
-    steps:
-      working-directory: ./functions
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-
-      - name: Install Dependencies
-        run: yarn install --frozen-lockfile
-
-      - name: Lint ESLint
-        run: yarn lint:eslint
-
-      - name: Lint Prettier
-        run: yarn lint:prettier
-  
-  lint-python:
-    runs-on: ubuntu-latest
+    env:
+      WORKING_DIR: next
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -41,9 +24,12 @@ jobs:
 
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
+        working-directory: ${{env.WORKING_DIR}}
 
       - name: Lint ESLint
         run: yarn lint:eslint
-
+        working-directory: ${{env.WORKING_DIR}}
+        
       - name: Lint Prettier
         run: yarn lint:prettier
+        working-directory: ${{env.WORKING_DIR}}
