@@ -1,0 +1,9 @@
+/next/.next/
+/next/node_modules/
+/next/out/
+
+/.vscode/
+
+/python/ipag00303/
+/python/ipag00303.zip
+/python/lbpcascade_animeface.xml

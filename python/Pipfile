@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+start = "python src/main.py"
+
+[packages]
+flask = "*"
+janome = "*"
+requests = "*"
+bs4 = "*"
+pillow = "*"
+matplotlib = "*"
+opencv-python = "*"
+urllib3 = "*"
+flask-httpauth = "*"
+flask-cors = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
