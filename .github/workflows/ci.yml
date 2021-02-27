@@ -14,7 +14,7 @@ jobs:
   lint-next:
     runs-on: ubuntu-latest
     env:
-      WORKING_DIR: ./next
+      WORKING_DIR: next
     steps:
       - name: Checkout
         uses: actions/checkout@v2
