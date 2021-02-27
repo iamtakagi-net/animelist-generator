@@ -54,7 +54,7 @@ jobs:
         working-directory: ${{env.WORKING_DIR}}
           
       - name: Install dependencies
-        run: pipenv sync
+        run: pipenv install --dev
         working-directory: ${{env.WORKING_DIR}}
           
       - name: Lint with flake8
