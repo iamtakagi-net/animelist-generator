@@ -6,7 +6,7 @@
 [![Next.js](https://img.shields.io/badge/Next.js-10.0.7-blue)](https://nextjs.org)
 [![Python](https://img.shields.io/badge/Python-3.9.2-blue)](https://kotlinlang.org)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/iam-takagi/animelist-generator)](https://github.com/iam-takagi/animelist-generator/releases)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/iam-takagi/animelist-generator/Lint)]()
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/iam-takagi/animelist-generator/CI)](https://github.com/iamtakagi/animelist-generator/actions)
 [![license](https://img.shields.io/github/license/iam-takagi/animelist-generator)](https://github.com/iam-takagi/animelist-generator/blob/master/LICENSE)
 [![issues](https://img.shields.io/github/issues/iam-takagi/animelist-generator)](https://github.com/iam-takagi/animelist-generator/issues)
 [![pull requests](https://img.shields.io/github/issues-pr/iam-takagi/animelist-generator)](https://github.com/iam-takagi/animelist-generator/pulls)
