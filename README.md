@@ -2,7 +2,7 @@
 
 [![Docker Compose](https://img.shields.io/badge/DockerCompose-3.8-blue)](https://kotlinlang.org)
 [![Node.js](https://img.shields.io/badge/Node.js-14-blue)](https://nodejs.org)
-[![React](https://img.shields.io/badge/React-17.0.1-blue)](https://https://reactjs.org)
+[![React](https://img.shields.io/badge/React-17.0.1-blue)](https://reactjs.org)
 [![Next.js](https://img.shields.io/badge/Next.js-10.0.7-blue)](https://nextjs.org)
 [![Python](https://img.shields.io/badge/Python-3.9.2-blue)](https://kotlinlang.org)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/releases)
@@ -12,13 +12,19 @@
 [![pull requests](https://img.shields.io/github/issues-pr/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/pulls)
 
 ## これはなに / What is this?
+[animateTimes](https://www.animatetimes.com/) のページからデータを取得し クールごとのアニメリスト画像を生成するウェブアプリケーションです。\
+開発中のため 一部不具合があります。ご了承ください。
+
+[Cartelet0423/animeListGen](https://github.com/Cartelet0423/animeListGen) を元にウェブアプリケーションとして開発しています。
+
+![キャプチャ1](https://user-images.githubusercontent.com/46530214/109392676-d0b0c880-7960-11eb-8dfb-4b39c92ca90c.PNG)
+![キャプチャ2](https://user-images.githubusercontent.com/46530214/109390795-f89b2e80-7956-11eb-9458-d6a456ba8df9.PNG)
 
 ## 動作環境 / OS
 Linux/macOS/Windows
 
 ## インストール / Installation
 
-- Cloneします
 ```console
 git clone https://github.com/iam-takagi/animelist-generator.git
 cd animelist-generator
@@ -68,6 +74,8 @@ docker-compose down
 docker-compose logs -f
 ```
 
+起動すると http://localhost:8086/ にウェブページが立っています。
+
 ## 貢献 / Contribution
 
 ### Issues
@@ -76,3 +84,6 @@ docker-compose logs -f
 ### Pull Requests
 開発には VSCode を使用しています。
 各自で環境を準備してください。
+
+## 当アプリケーションをウェブ上に公開する場合
+公開は自己責任で行ってください。開発者は一切の責任を負いかねます。
