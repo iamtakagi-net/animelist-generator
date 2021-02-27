@@ -17,7 +17,7 @@
 
 [Cartelet0423/animeListGen](https://github.com/Cartelet0423/animeListGen) を元にウェブアプリケーションとして開発しています。
 
-![キャプチャ1](https://user-images.githubusercontent.com/46530214/109390792-f76a0180-7956-11eb-81ea-9a9263605fe3.PNG)
+![キャプチャ1](https://user-images.githubusercontent.com/46530214/109392676-d0b0c880-7960-11eb-8dfb-4b39c92ca90c.PNG)
 ![キャプチャ2](https://user-images.githubusercontent.com/46530214/109390795-f89b2e80-7956-11eb-9458-d6a456ba8df9.PNG)
 
 ## 動作環境 / OS
