@@ -55,9 +55,7 @@ jobs:
           
       - name: Lint with flake8
         run: |
-          # Python 構文エラーまたは未定義の名前がある場合はビルドを停止する
           flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-          # exit-zeroはすべてのエラーを警告として扱う。 GitHubのエディタの幅は127文字
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics  
       - name: Test with pytest
         run: pytest
