@@ -75,7 +75,7 @@ docker-compose down
 docker-compose logs -f
 ```
 
-起動すると http://localhost:8086/ にウェブページが立っています。
+起動すると http://localhost:8086 にウェブページが立っています。
 
 ## 貢献 / Contribution
 
