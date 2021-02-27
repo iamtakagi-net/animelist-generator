@@ -5,13 +5,15 @@ on:
     branches:
       - master
       - dev
+      
   pull_request:
      branches:
       - master
       - dev
 
 jobs:
-  check-next:
+
+  lint-next:
     runs-on: ubuntu-latest
     env:
       WORKING_DIR: next
@@ -33,7 +35,7 @@ jobs:
       - name: Lint Prettier
         run: yarn lint:prettier
         working-directory: ${{env.WORKING_DIR}}
-  
+        
   check-python:
     runs-on: ubuntu-latest
     env:
@@ -47,16 +49,16 @@ jobs:
         with:
           python-version: 3.9.2
           
-      - name: Install pipenv and dependencies
+      - name: Install Pipenv
         run: |
           python -m pip install --upgrade pip
-          pip install pipenv --upgrade-strategy=only-if-needed
-          pipenv install --dev
+          pip install pipenv
+        working-directory: ${{env.WORKING_DIR}}
+          
+      - name: Install dependencies
+        run: pipenv install --dev
+        working-directory: ${{env.WORKING_DIR}}
           
       - name: Lint with flake8
         run: pipenv run lint
-        
-      - name: Test with pytest
-        run: pipenv run test
-
-
+        working-directory: ${{env.WORKING_DIR}}
