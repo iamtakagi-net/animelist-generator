@@ -1,4 +1,4 @@
-# animelist-generator: season animelist generator with web application.
+# animelist-generator: Japanese season animelist generator with web application.
 
 [![Docker Compose](https://img.shields.io/badge/DockerCompose-3.8-blue)](https://kotlinlang.org)
 [![Node.js](https://img.shields.io/badge/Node.js-14-blue)](https://nodejs.org)
@@ -24,7 +24,7 @@ git clone https://github.com/iam-takagi/animelist-generator.git
 cd animelist-generator
 ```
 
-## Docker
+## Docker Compose を使用してインストール / Install with Docker Compose
 `docker-compose.yml`
 ```yml
 version: '3.8'
@@ -68,11 +68,11 @@ docker-compose down
 docker-compose logs -f
 ```
 
-# 貢献 / Contribution
+## 貢献 / Contribution
 
-## Issues
+### Issues
 バグの報告・改善点・提案等を行ってください。
 
-## Pull Requests
+### Pull Requests
 開発には VSCode を使用しています。
 各自で環境を準備してください。
