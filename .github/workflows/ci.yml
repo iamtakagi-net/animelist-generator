@@ -33,6 +33,3 @@ jobs:
       - name: Lint Prettier
         run: yarn lint:prettier
         working-directory: ${{env.WORKING_DIR}}
-
-      - name: Lint Prettier
-        run: yarn lint:prettier
