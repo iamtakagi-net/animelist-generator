@@ -2,7 +2,7 @@
 
 [![Docker Compose](https://img.shields.io/badge/DockerCompose-3.8-blue)](https://kotlinlang.org)
 [![Node.js](https://img.shields.io/badge/Node.js-14-blue)](https://nodejs.org)
-[![React](https://img.shields.io/badge/React-17.0.1-blue)](https://https://reactjs.org)
+[![React](https://img.shields.io/badge/React-17.0.1-blue)](https://reactjs.org)
 [![Next.js](https://img.shields.io/badge/Next.js-10.0.7-blue)](https://nextjs.org)
 [![Python](https://img.shields.io/badge/Python-3.9.2-blue)](https://kotlinlang.org)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/releases)
