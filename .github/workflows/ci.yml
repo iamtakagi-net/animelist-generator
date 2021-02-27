@@ -29,6 +29,10 @@ jobs:
       - name: Lint ESLint
         run: yarn lint:eslint
         working-directory: ${{env.WORKING_DIR}}
+        
+      - name: Lint Prettier
+        run: yarn lint:prettier
+        working-directory: ${{env.WORKING_DIR}}
 
       - name: Lint Prettier
         run: yarn lint:prettier
