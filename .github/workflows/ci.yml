@@ -5,13 +5,15 @@ on:
     branches:
       - master
       - dev
+      
   pull_request:
      branches:
       - master
       - dev
 
 jobs:
-  check-next:
+
+  lint-next:
     runs-on: ubuntu-latest
     env:
       WORKING_DIR: next
@@ -33,7 +35,7 @@ jobs:
       - name: Lint Prettier
         run: yarn lint:prettier
         working-directory: ${{env.WORKING_DIR}}
-  
+        
   check-python:
     runs-on: ubuntu-latest
     env:
