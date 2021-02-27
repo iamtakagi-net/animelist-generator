@@ -264,7 +264,8 @@ def generate(url):
             image = line.copy()
         del line
     
-    result, dst_data = cv2.imencode('.png', image)
+    im_bgr = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+    result, dst_data = cv2.imencode('.png', im_bgr)
     base64str = base64.b64encode(dst_data)
     title = ''.join(Title.splitlines())
     #filename = uuid.uuid4()
