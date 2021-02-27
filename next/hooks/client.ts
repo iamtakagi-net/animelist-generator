@@ -1,5 +1,5 @@
-import { Client } from "../src/client/Client"
+import { Client } from "../src/client/Client";
 
 export const useClient = () => {
-    return new Client()
-}
+  return new Client();
+};

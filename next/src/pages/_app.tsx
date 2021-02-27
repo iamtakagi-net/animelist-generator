@@ -5,10 +5,10 @@ import { ToastProvider } from "react-toast-notifications";
 
 function App({ Component, pageProps }: AppProps) {
   return (
-      <ToastProvider>
-           <Component {...pageProps} />
-      </ToastProvider>
-  )
+    <ToastProvider>
+      <Component {...pageProps} />
+    </ToastProvider>
+  );
 }
 
 export default App;
