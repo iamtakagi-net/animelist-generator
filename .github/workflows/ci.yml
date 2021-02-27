@@ -60,9 +60,5 @@ jobs:
       - name: Lint with flake8
         run: pipenv run lint
         working-directory: ${{env.WORKING_DIR}}
-        
-      - name: Test with pytest
-        run: pipenv run pytest
-        working-directory: ${{env.WORKING_DIR}}
 
 
