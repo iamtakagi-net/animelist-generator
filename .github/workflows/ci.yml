@@ -62,7 +62,7 @@ jobs:
         working-directory: ${{env.WORKING_DIR}}
         
       - name: Test with pytest
-        run: pipenv run test
+        run: pipenv run test .
         working-directory: ${{env.WORKING_DIR}}
 
 
