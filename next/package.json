@@ -1,7 +1,6 @@
 {
   "name": "animelist-generator",
   "author": "takagi",
-  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
