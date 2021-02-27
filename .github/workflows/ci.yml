@@ -1,4 +1,4 @@
-name: LintNext
+name: CI
 
 on:
   push:
@@ -11,8 +11,10 @@ on:
       - dev
 
 jobs:
-  lint:
+  lint-next:
     runs-on: ubuntu-latest
+    env:
+      WORKING_DIR: ./next
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -22,9 +24,11 @@ jobs:
 
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
+        working-directory: ${{env.WORKING_DIR}}
 
       - name: Lint ESLint
         run: yarn lint:eslint
+        working-directory: ${{env.WORKING_DIR}}
 
       - name: Lint Prettier
         run: yarn lint:prettier
