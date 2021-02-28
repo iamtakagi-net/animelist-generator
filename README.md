@@ -26,12 +26,7 @@ Linux/macOS/Windows
 
 ## インストール / Installation
 
-```console
-git clone https://github.com/iam-takagi/animelist-generator.git
-cd animelist-generator
-```
-
-## Docker Compose を使用してインストール / Install with Docker Compose
+### Docker Compose を使用してインストール / Install with Docker Compose
 `docker-compose.yml`
 ```yml
 version: '3.8'
