@@ -8,3 +8,5 @@
 /python/ipag00303.zip
 /python/lbpcascade_animeface.xml
 /python/.pytest_cache
+
+docker-compose.dev.yml
