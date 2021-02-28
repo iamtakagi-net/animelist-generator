@@ -33,6 +33,7 @@ cd animelist-generator
 
 ## Docker Compose を使用してインストール / Install with Docker Compose
 `docker-compose.yml`
+```
 version: '3.8'
 
 services:
