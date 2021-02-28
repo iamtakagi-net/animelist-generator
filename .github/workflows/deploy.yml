@@ -16,9 +16,10 @@ on:
   workflow_dispatch:
 
 env:
-  PYTHON_DOCKER_IMAGE: iamtakagi/animelist-generator_python
-  NEXT_DOCKER_IMAGE: iamtakagi/animelist-generator_next
-  NGINX_DOCKER_IMAGE: iamtakagi/animelist-generator_nginx
+  DOCKER_IMAGE_BASE: iamtakagi/animelist-generator
+  PYTHON_DOCKER_IMAGE: ${{ env.DOCKER_IMAGE_BASE }}_python
+  NEXT_DOCKER_IMAGE: ${{ env.DOCKER_IMAGE_BASE }}_next
+  NGINX_DOCKER_IMAGE: ${{ env.DOCKER_IMAGE_BASE }}_nginx
 
   PYTHON_DOCKER_FILE: ./python/Dockerfile
   NEXTN_DOCKER_FILE: ./next/Dockerfile
@@ -44,14 +45,14 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ PYTHON_DOCKER_IMAGE }}:latest
+          tags: ${{ env.PYTHON_DOCKER_IMAGE }}:latest
           file: ${{ env.PYTHON_DOCKER_FILE }}
       - name: Build & Push (dev) - Python
         if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ PYTHON_DOCKER_IMAGE }}:dev
+          tags: ${{ env.PYTHON_DOCKER_IMAGE }}:dev
           file: ${{ env.PYTHON_DOCKER_FILE }}
       - name: Build & Push (Release) - Python
         if: github.event_name == 'release'
@@ -67,14 +68,14 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ NEXT_DOCKER_IMAGE }}:latest
+          tags: ${{ env.NEXT_DOCKER_IMAGE }}:latest
           file: ${{ env.NEXT_DOCKER_FILE }}
       - name: Build & Push (dev) - Next
         if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ NEXT_DOCKER_IMAGE }}:dev
+          tags: ${{ env.NEXT_DOCKER_IMAGE }}:dev
           file: ${{ env.NEXT_DOCKER_FILE }}
       - name: Build & Push (Release) - Next
         if: github.event_name == 'release'
@@ -90,14 +91,14 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ NGINX_DOCKER_IMAGE }}:latest
+          tags: ${{ env.NGINX_DOCKER_IMAGE }}:latest
           file: ${{ env.NGINX_DOCKER_FILE }}
       - name: Build & Push (dev) - Nginx
         if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ NGINX_DOCKER_IMAGE }}:dev
+          tags: ${{ env.NGINX_DOCKER_IMAGE }}:dev
           file: ${{ env.NGINX_DOCKER_FILE }}
       - name: Build & Push (Release) - Nginx
         if: github.event_name == 'release'
