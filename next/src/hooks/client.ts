@@ -1,4 +1,4 @@
-import { Client } from "../src/client/Client";
+import { Client } from "../client/Client";
 
 export const useClient = () => {
   return new Client();

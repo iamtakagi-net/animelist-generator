@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import { useClient } from "../../hooks/client";
+import { useClient } from "../hooks/client";
 import { useToasts } from "react-toast-notifications";
 
 const IndexPage = () => {
