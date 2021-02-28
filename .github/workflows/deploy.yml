@@ -1,0 +1,108 @@
+name: Deploy to Docker Hub
+
+on:
+  push:
+    paths-ignore:
+      - .gitignore
+      - LICENSE
+      - '**.md'
+    branches-ignore:
+      - 'releases/**'
+
+  release:
+    types:
+      - published
+
+  workflow_dispatch:
+
+env:
+  PYTHON_DOCKER_IMAGE: iamtakagi/animelist-generator_python
+  NEXT_DOCKER_IMAGE: iamtakagi/animelist-generator_next
+  NGINX_DOCKER_IMAGE: iamtakagi/animelist-generator_nginx
+
+  PYTHON_DOCKER_CONTEXT: python
+  NEXT_DOCKER_CONTEXT: next
+  NGINX_DOCKER_CONTEXT: nginx
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1 
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      
+      # Python
+      - name: Build & Push (master) - Python
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: ${{ env.PYTHON_DOCKER_IMAGE }}:latest
+          context: ${{ env.PYTHON_DOCKER_CONTEXT }}
+      - name: Build & Push (dev) - Python
+        if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: ${{ env.PYTHON_DOCKER_IMAGE }}:dev
+          context: ${{ env.PYTHON_DOCKER_CONTEXT }}
+      - name: Build & Push (Release) - Python
+        if: github.event_name == 'release'
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: ${{ env.PYTHON_DOCKER_IMAGE }}:${{ github.event.release.tag_name }}
+          context: ${{ env.PYTHON_DOCKER_CONTEXT }}
+      
+      # Next
+      - name: Build & Push (master) - Next
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: ${{ env.NEXT_DOCKER_IMAGE }}:latest
+          context: ${{ env.NEXT_DOCKER_CONTEXT }}
+      - name: Build & Push (dev) - Next
+        if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: ${{ env.NEXT_DOCKER_IMAGE }}:dev
+          context: ${{ env.NEXT_DOCKER_CONTEXT }}
+      - name: Build & Push (Release) - Next
+        if: github.event_name == 'release'
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: ${{ env.NEXT_DOCKER_IMAGE }}:${{ github.event.release.tag_name }}
+          context: ${{ env.NEXT_DOCKER_CONTEXT }}
+
+      # Nginx
+      - name: Build & Push (master) - Nginx
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: ${{ env.NGINX_DOCKER_IMAGE }}:latest
+          context: ${{ env.NGINX_DOCKER_CONTEXT }}
+      - name: Build & Push (dev) - Nginx
+        if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: ${{ env.NGINX_DOCKER_IMAGE }}:dev
+          context: ${{ env.NGINX_DOCKER_CONTEXT }}
+      - name: Build & Push (Release) - Nginx
+        if: github.event_name == 'release'
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: ${{ env.NGINX_DOCKER_IMAGE }}:${{ github.event.release.tag_name }}
+          context: ${{ env.NGINX_DOCKER_CONTEXT }}
