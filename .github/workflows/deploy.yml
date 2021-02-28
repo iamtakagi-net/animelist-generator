@@ -1,4 +1,4 @@
-name: Deploy to Docker
+name: Deploy to Docker Hub
 
 on:
   push:
@@ -16,10 +16,9 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKER_IMAGE_BASE: iamtakagi/animelist-generator
-  PYTHON_DOCKER_IMAGE: ${{ env.DOCKER_IMAGE_BASE }}_python
-  NEXT_DOCKER_IMAGE: ${{ env.DOCKER_IMAGE_BASE }}_next
-  NGINX_DOCKER_IMAGE: ${{ env.DOCKER_IMAGE_BASE }}_nginx
+  PYTHON_DOCKER_IMAGE: iamtakagi/animelist-generator_python
+  NEXT_DOCKER_IMAGE: iamtakagi/animelist-generator_next
+  NGINX_DOCKER_IMAGE: iamtakagi/animelist-generator_nginx
 
   PYTHON_DOCKER_FILE: ./python/Dockerfile
   NEXTN_DOCKER_FILE: ./next/Dockerfile
