@@ -21,7 +21,7 @@ env:
   NGINX_DOCKER_IMAGE: iamtakagi/animelist-generator_nginx
 
   PYTHON_DOCKER_CONTEXT: python
-  NEXTN_DOCKER_CONTEXT:  next
+  NEXTN_DOCKER_CONTEXT: next
   NGINX_DOCKER_CONTEXT: nginx
 
   PYTHON_DOCKER_FILE: ./python/Dockerfile
