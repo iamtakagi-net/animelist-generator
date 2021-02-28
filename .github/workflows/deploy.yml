@@ -22,7 +22,7 @@ env:
 
   PYTHON_DOCKER_CONTEXT: python
   NEXTN_DOCKER_CONTEXT:  next
-  NGINXN_DOCKER_CONTEXT: nginx
+  NGINX_DOCKER_CONTEXT: nginx
 
   PYTHON_DOCKER_FILE: ./python/Dockerfile
   NEXTN_DOCKER_FILE: ./next/Dockerfile
