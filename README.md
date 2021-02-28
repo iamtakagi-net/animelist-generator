@@ -33,12 +33,12 @@ cd animelist-generator
 
 ## Docker Compose を使用してインストール / Install with Docker Compose
 `docker-compose.yml`
-```yml
 version: '3.8'
 
 services:
   python:
-    build: python
+    container_name: animelist-generator_python
+    image: iamtakagi/animelist-generator_python:latest
     environment:
       TZ: Asia/Tokyo
       HOST: 0.0.0.0
@@ -47,7 +47,8 @@ services:
     ports:
       - 8000:8000
   next:
-    build: next
+    container_name: animelist-generator_next
+    image: iamtakagi/animelist-generator_next:latest
     environment:
       TZ: Asia/Tokyo
       HOST: 0.0.0.0
@@ -56,7 +57,8 @@ services:
       - 3000:3000
     restart: always
   nginx:
-    build: nginx
+    container_name: animelist-generator_nginx
+    image: iamtakagi/animelist-generator_nginx:latest
     ports:
       - 8086:80
     environment:
