@@ -32,6 +32,10 @@ Linux/macOS/Windows
 
 ## インストール / Installation
 
+`:latest` master ブランチへのプッシュの際にビルドされます。安定しています。\
+`:dev` dev ブランチへのプッシュの際にビルドされます。開発版のため, 不安定である可能性があります。\
+`:<tag>` GitHub 上のリリースに対応します。
+
 ### Docker Compose を使用してインストール / Install with Docker Compose
 `docker-compose.yml`
 ```yml
