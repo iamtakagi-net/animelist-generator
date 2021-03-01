@@ -5,13 +5,13 @@ name = "pypi"
 
 [scripts]
 start = "python src/main.py"
+generate = "python src/generator.py"
 lint = "flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics"
 test = "pytest"
 
 [packages]
 flask = "*"
 janome = "*"
-requests = "*"
 pillow = "*"
 matplotlib = "*"
 opencv-python = "*"
@@ -19,6 +19,7 @@ urllib3 = "*"
 flask-httpauth = "*"
 flask-cors = "*"
 beautifulsoup4 = "*"
+requests = "*"
 
 [dev-packages]
 flake8 = "*"
