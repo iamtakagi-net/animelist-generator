@@ -1,5 +1,6 @@
 # 📰 animelist-generator: Japanese season animelist generator with web application.
 
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/releases)
 [![Docker Compose](https://img.shields.io/badge/DockerCompose-3.8-blue)](https://kotlinlang.org)
 [![Nginx](https://img.shields.io/badge/Nginx-1.19.7-blue)](https://reactjs.org)
 [![Node.js](https://img.shields.io/badge/Node.js-14-blue)](https://nodejs.org)
