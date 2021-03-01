@@ -31,6 +31,7 @@
 Linux/macOS/Windows
 
 ## インストール / Installation
+イメージは DockerHub にpushされています。
 
 `:latest` master ブランチへのプッシュの際にビルドされます。安定しています。\
 `:dev` dev ブランチへのプッシュの際にビルドされます。開発版のため, 不安定である可能性があります。\
