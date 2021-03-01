@@ -12,7 +12,6 @@
 [![issues](https://img.shields.io/github/issues/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/issues)
 [![pull requests](https://img.shields.io/github/issues-pr/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/pulls)
 
-## これはなに / What is this?
 [animateTimes](https://www.animatetimes.com/) のページからデータを取得し クールごとのアニメリスト画像を生成するウェブアプリケーションです。\
 開発中のため 一部不具合があります。ご了承ください。
 
@@ -21,6 +20,12 @@
 ![キャプチャ1](https://user-images.githubusercontent.com/46530214/109392676-d0b0c880-7960-11eb-8dfb-4b39c92ca90c.PNG)
 ![キャプチャ2](https://user-images.githubusercontent.com/46530214/109520311-6ed29900-7aef-11eb-9a23-658ac320c4db.PNG)
 
+### 例としてこのような画像を生成します
+参照画像が存在しない場合 サムネイルは空白となります。
+<details>
+<summary>クリックして画像を開く</summary>
+  <img src="https://user-images.githubusercontent.com/46530214/109520497-a5101880-7aef-11eb-9c08-cb0f6dd8067a.png"/>
+</details>
 
 ## 動作環境 / OS
 Linux/macOS/Windows
