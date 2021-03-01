@@ -39,12 +39,16 @@ aimpoint = {
     "放送スケジュール": (71, 142),
     "原作": (0, 295),
 }
- 
- 
+
 def get_data(url):
     global Title
     html = get(url).text
     soup = BeautifulSoup(html, 'html.parser')
+
+    # クラスを持たない無関係の画像を検索
+    for tag in soup.find_all('img', attrs={'class': None}):
+        # タグとその内容の削除
+        tag.decompose()
  
     for i in soup.select("br"):
         i.replace_with("\n")
@@ -70,12 +74,29 @@ def get_data(url):
                     k = k[1:]
                 aa.append(k)
         li.append(aa)
- 
+
+    #print(li[0][0])
+    #for i, x in enumerate(li):
+        #print(li[i][0])
+
+    #li.reverse()
+
     data = {}
     for i in li:
         d = {"img": "", "原作": "", "キャスト": "", "制作元請": "", "放送スケジュール": ""}
         data[i[1]] = d
+
+        # 重複画像を削除
+        a = 0
+        for n, x in enumerate(li):
+            if li[n][0] == i[0]: 
+                a+=1
+                if a == 2:
+                    li[n-1][0] = None
+                    break
+        
         d["img"] = i[0]
+
         d["放送スケジュール"] = i[-1]
         d["キャスト"] = "\n".join(re.findall(".+:(.+)", i[2].replace("：", ":")))
         staff = []
@@ -93,7 +114,6 @@ def get_data(url):
             if j.name == "a" and "サイト" in j.text:
                 data[i[1]]['href'] = j["href"]
                 break
- 
     return data
  
  
@@ -273,3 +293,6 @@ def generate(url):
     #plt.imsave(file_path, image)
     print(area_ + "\n</map>")
     return base64str
+
+if __name__ == '__main__':
+    get_data(url = "https://www.animatetimes.com/tag/details.php?id=5228")
