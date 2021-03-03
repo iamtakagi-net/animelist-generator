@@ -92,7 +92,7 @@ docker pull iamtakagi/animelist-generator_nginx:latest
 
 起動すると http://localhost:8086 にウェブページが立っています。
 
-## 開発を行う場合
+## 開発を行う場合 / Development mode
 ```console
 git clone https://github.com/iamtakagi/animelist-generator (もしくはフォーク)
 touch docker-compose.dev.yml
