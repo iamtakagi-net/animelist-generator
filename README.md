@@ -99,7 +99,7 @@ docker pull iamtakagi/animelist-generator_nginx:latest
 
 ## 開発を行う場合 / Development mode
 ```console
-git clone https://github.com/iamtakagi/animelist-generator (もしくはフォーク)
+git clone https://github.com/USERNAME/animelist-generator
 touch docker-compose.dev.yml
 ```
 
