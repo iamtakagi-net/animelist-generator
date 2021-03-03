@@ -83,9 +83,53 @@ docker-compose down
 
 # ログ確認 / Logs
 docker-compose logs -f
+
+# 更新
+docker pull iamtakagi/animelist-generator_python:latest
+docker pull iamtakagi/animelist-generator_next:latest
+docker pull iamtakagi/animelist-generator_nginx:latest
 ```
 
 起動すると http://localhost:8086 にウェブページが立っています。
+
+## 開発を行う場合
+```console
+git clone https://github.com/iamtakagi/animelist-generator (もしくはフォーク)
+touch docker-compose.dev.yml
+```
+
+`docker-compose.dev.yml`
+```yml
+version: '3.8'
+
+services:
+  python:
+    build: python
+    environment:
+      TZ: Asia/Tokyo
+      HOST: 0.0.0.0
+      PORT: 8000
+    restart: always
+    ports:
+      - 8000:8000
+  next:
+    build: next
+    environment:
+      TZ: Asia/Tokyo
+      HOST: 0.0.0.0
+      PORT: 3000
+      GENERATOR_HOST: python
+    ports:
+      - 3000:3000
+    restart: always
+  nginx:
+    build: nginx
+    ports:
+      - 8086:80
+    environment:
+      TZ: Asia/Tokyo
+    restart: always
+```
 
 ## 貢献 / Contribution
 
