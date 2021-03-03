@@ -39,6 +39,11 @@ Linux/macOS/Windows
 `:<tag>` GitHub 上のリリースに対応します。
 
 ### Docker Compose を使用してインストール / Install with Docker Compose
+
+```console
+touch docker-compose.dev.yml
+```
+
 `docker-compose.yml`
 ```yml
 version: '3.8'
