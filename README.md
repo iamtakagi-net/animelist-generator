@@ -41,7 +41,7 @@ Linux/macOS/Windows
 ### Docker Compose を使用してインストール / Install with Docker Compose
 
 ```console
-touch docker-compose.dev.yml
+touch docker-compose.yml
 ```
 
 `docker-compose.yml`
