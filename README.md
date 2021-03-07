@@ -18,8 +18,8 @@
 
 [Cartelet0423/animeListGen](https://github.com/Cartelet0423/animeListGen) を元にウェブアプリケーションとして開発しています。
 
-![キャプチャ1](https://user-images.githubusercontent.com/46530214/109392676-d0b0c880-7960-11eb-8dfb-4b39c92ca90c.PNG)
-![キャプチャ2](https://user-images.githubusercontent.com/46530214/109520311-6ed29900-7aef-11eb-9a23-658ac320c4db.PNG)
+![chrome_5I4bimZ9Ak](https://user-images.githubusercontent.com/46530214/110240691-83e87580-7f90-11eb-8c99-3307aa0180a2.png)
+![hmI1MPKwGI](https://user-images.githubusercontent.com/46530214/110240693-8519a280-7f90-11eb-9a86-7d50461700a2.png)
 
 ### 例としてこのような画像を生成します
 参照画像が存在しない場合 サムネイルは空白となります。
@@ -52,7 +52,9 @@ services:
   python:
     container_name: animelist-generator_python
     image: iamtakagi/animelist-generator_python:latest
-    environment:
+    environment:![hmI1MPKwGI](https://user-images.githubusercontent.com/46530214/110240665-61eef300-7f90-11eb-8c23-8c9f8cea2be8.png)![hmI1MPKwGI](https://user-images.githubusercontent.com/46530214/110240669-67e4d400-7f90-11eb-8459-b6600fd09fa5.png)
+
+
       TZ: Asia/Tokyo
       HOST: 0.0.0.0
       PORT: 8000
