@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Head from "next/head";
 import { useClient } from "../hooks/client";
 import { useToasts } from "react-toast-notifications";
+import ThemeSwitch from "../components/ThemeSwitch";
 
 const IndexPage = () => {
   const toast = useToasts();
@@ -52,51 +52,45 @@ const IndexPage = () => {
   }
 
   return (
-    <>
-      <Head>
-        <title>AnimeList Generator</title>
-        <meta property="og:title" content="AnimeList Generator" />
-        <meta property="og:description" content="アニメリストを生成します" />
-        <meta property="og:url" content="" />
-        <meta property="og:image" content="" />
-        <meta name="twitter:card" content="summary" />
-      </Head>
-      <div className="min-h-screen">
-        <div className="container mx-auto h-screen flex justify-center text-center">
-          <div className="w-2/3 mx-auto flex-col">
-            <div className="desc w-full my-6 space-y-1">
-              <p className="text-lg">AnimeList Generator</p>
-              <p className="text-sm">
-                {" "}
-                <a href="https://www.animatetimes.com/">
-                  アニメイトタイムズ
+    <div className="container mx-auto h-screen flex justify-center text-center">
+
+      <div className="w-2/3 mx-auto flex-col">
+
+        <div className="mt-5">
+          <ThemeSwitch />
+        </div>
+
+        <div className="desc w-full my-6 space-y-1">
+          <p className="text-lg">AnimeList Generator</p>
+          <p className="text-sm">
+            {" "}
+            <a href="https://www.animatetimes.com/">
+              アニメイトタイムズ
                 </a>{" "}
                 からデータを取得して画像を生成します
               </p>
 
-              <div className="space-x-4 pt-1">
-                <label className="block">
-                  <span className="text-gray-700">URL</span>
-                  <input
-                    type="text"
-                    className="form-input mt-1 block w-full"
-                    placeholder="e.g. https://www.animatetimes.com/tag/details.php?id=5228"
-                    defaultValue={url}
-                    onChange={(event) => setUrl(event.target.value)}
-                  />
-                </label>
+          <div className="space-x-4 pt-1">
+            <label className="block">
+              <span className="text-gray-700">URL</span>
+              <input
+                type="text"
+                className="form-input mt-1 block w-full"
+                placeholder="e.g. https://www.animatetimes.com/tag/details.php?id=5228"
+                defaultValue={url}
+                onChange={(event) => setUrl(event.target.value)}
+              />
+            </label>
 
-                {button}
+            {button}
 
-                {statusText}
-              </div>
-            </div>
-
-            {image}
+            {statusText}
           </div>
         </div>
+
+        {image}
       </div>
-    </>
+    </div>
   );
 };
 
