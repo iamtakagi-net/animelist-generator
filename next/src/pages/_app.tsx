@@ -1,9 +1,11 @@
-import React from "react";
-import type { AppProps } from "next/app";
-import "../styles/index.css";
+import * as React from 'react'
+import Router from 'next/router'
+import { AppProps } from 'next/app'
 import { ToastProvider } from "react-toast-notifications";
 
-function App({ Component, pageProps }: AppProps) {
+import "../styles/main.css";
+
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ToastProvider>
       <Component {...pageProps} />
@@ -11,4 +13,4 @@ function App({ Component, pageProps }: AppProps) {
   );
 }
 
-export default App;
+export default App
