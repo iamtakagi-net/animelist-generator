@@ -18,7 +18,10 @@
     "next": "^10.0.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-toast-notifications": "^2.4.3"
+    "react-icons": "^4.2.0",
+    "react-switch": "^6.0.0",
+    "react-toast-notifications": "^2.4.3",
+    "use-dark-mode": "^2.3.1"
   },
   "devDependencies": {
     "@tailwindcss/custom-forms": "^0.2.1",
@@ -36,6 +39,7 @@
     "postcss": "8.2.4",
     "prettier": "2.2.1",
     "tailwindcss": "2.0.2",
+    "tailwindcss-dark-mode": "^1.1.7",
     "typescript": "4.1.3"
   }
 }
