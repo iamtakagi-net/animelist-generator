@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { useClient } from "@/hooks/client";
+import { useClient } from "../hooks/client";
 import { useToasts } from "react-toast-notifications";
-import ThemeSwitch from "@/components/ThemeSwitch";
+import ThemeSwitch from "../components/ThemeSwitch";
 
 const IndexPage = () => {
   const toast = useToasts();
