@@ -21,11 +21,10 @@ import generator
 def get_data():
      url = request.args.get('url')
      try:
-          base64str = generator.get_data(url).decode('utf-8')
-          return jsonify({'base64str': base64str})
+          data = generator.get_data(url).decode('utf-8')
+          return jsonify({'data': data})
      except:
           return jsonify({'message': '無効なURL'}), 500
-
 
 # 生成された画像(Base64)を返します
 @app.route("/api/generate")
