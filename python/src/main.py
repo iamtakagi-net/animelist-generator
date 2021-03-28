@@ -16,6 +16,17 @@ CORS(app)
 # Generator
 import generator
 
+
+# 生成された画像(Base64)を返します
+@app.route("/api/data")
+def generate():
+     url = request.args.get('url')
+     try:
+          base64str = generator.get_data(url).decode('utf-8')
+          return jsonify({'base64str': base64str})
+     except:
+          return jsonify({'message': '無効なURL'}), 500
+
 # 生成された画像(Base64)を返します
 @app.route("/api/generate")
 def generate():
