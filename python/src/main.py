@@ -1,6 +1,6 @@
 # Env
 import os
-Env = { 
+env = { 
     "HOST": os.environ["HOST"],
     "PORT": os.environ["PORT"],
 }
@@ -39,7 +39,7 @@ def generate():
 
 if __name__ == '__main__':
     app.run (
-          host = Env["HOST"], 
-          port = Env["PORT"], 
+          host = env["HOST"], 
+          port = env["PORT"], 
           debug = True
      )
