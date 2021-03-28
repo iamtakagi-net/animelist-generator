@@ -62,9 +62,9 @@ services:
       TZ: Asia/Tokyo
       HOST: 0.0.0.0
       PORT: 3000
+    restart: always
     ports:
       - 3000:3000
-    restart: always
   nginx:
     container_name: animelist-generator_nginx
     image: iamtakagi/animelist-generator_nginx:latest
