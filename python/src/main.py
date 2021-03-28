@@ -21,7 +21,7 @@ import generator
 def get_data():
      url = request.args.get('url')
      try:
-          data = generator.get_data(url).decode('utf-8')
+          data = generator.get_data(url)
           return jsonify({'data': data})
      except:
           return jsonify({'message': '無効なURL'}), 500
