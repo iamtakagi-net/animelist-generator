@@ -24,6 +24,12 @@
   <img src="https://user-images.githubusercontent.com/46530214/109520497-a5101880-7aef-11eb-9c08-cb0f6dd8067a.png"/>
 </details>
 
+## エンドポイント
+URL  | Description | Response Example 
+---- | ---- | ----
+/api/generate?url=https://www.animatetimes.com/tag/details.php?id=xxx | アニメリスト画像を生成してBase64で返します | {"base64str": xxx}
+/api/data?url=https://www.animatetimes.com/tag/details.php?id=xxx | データを配列で返します | [{"img": xxx, "原作": xxx, "キャスト": xxx, "制作元請": xxx, "放送スケジュール": xxx}]
+
 ## 動作環境 / OS
 Linux/macOS/Windows
 
