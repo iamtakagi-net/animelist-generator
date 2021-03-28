@@ -2,7 +2,7 @@
 import os
 env = { 
     "HOST": os.environ["HOST"],
-    "PORT": os.environ["PORT"],
+    "PORT": os.environ["PORT"]
 }
 
 # Flask
@@ -39,6 +39,7 @@ def generate():
 
 if __name__ == '__main__':
     app.run (
+          threaded=True
           host = env["HOST"], 
           port = env["PORT"], 
           debug = True
