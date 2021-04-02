@@ -17,12 +17,18 @@
 ![chrome_5I4bimZ9Ak](https://user-images.githubusercontent.com/46530214/110240691-83e87580-7f90-11eb-8c99-3307aa0180a2.png)
 ![hmI1MPKwGI](https://user-images.githubusercontent.com/46530214/110240693-8519a280-7f90-11eb-9a86-7d50461700a2.png)
 
-### 例としてこのような画像を生成します
+## 例としてこのような画像を生成します
 参照画像が存在しない場合 サムネイルは空白となります。
 <details>
 <summary>クリックして画像を開く</summary>
   <img src="https://user-images.githubusercontent.com/46530214/109520497-a5101880-7aef-11eb-9c08-cb0f6dd8067a.png"/>
 </details>
+
+## ワンクリックでダウンロードできます
+[0.0.4](https://github.com/iamtakagi/animelist-generator/releases/tag/0.0.4) より対応
+
+![chrome_kZaefnhGgX](https://user-images.githubusercontent.com/46530214/113428672-2968fa80-9412-11eb-917e-1f63b32a21d5.png)
+![chrome_cjY01mgHTI](https://user-images.githubusercontent.com/46530214/113428675-2a9a2780-9412-11eb-9ba6-44fbd7c9365c.png)
 
 ## エンドポイント
 URL  | Description | Response Example 
