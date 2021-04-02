@@ -1,4 +1,4 @@
 export type Animelist = {
-    title: string
-    base64Str: string
-}
+  title: string;
+  base64Str: string;
+};
