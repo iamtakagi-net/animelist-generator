@@ -3,6 +3,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/releases)
 [![Node.js](https://img.shields.io/badge/Node.js-14-blue)](https://nodejs.org)
 [![Python](https://img.shields.io/badge/Python-3.9.2-blue)](https://kotlinlang.org)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/releases)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/iamtakagi/animelist-generator/CI)](https://github.com/iamtakagi/animelist-generator/actions/workflows/ci.yml)
 [![license](https://img.shields.io/github/license/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/blob/master/LICENSE)
 [![issues](https://img.shields.io/github/issues/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/issues)
@@ -26,7 +27,7 @@
 ## エンドポイント
 URL  | Description | Response Example 
 ---- | ---- | ----
-/api/generate?url=https://www.animatetimes.com/tag/details.php?id=xxx | アニメリスト画像を生成してBase64で返します | {"base64str": xxx}
+/api/generate?url=https://www.animatetimes.com/tag/details.php?id=xxx | アニメリスト画像を生成してBase64で返します | {"title", xxx, "base64Str": xxx}
 /api/data?url=https://www.animatetimes.com/tag/details.php?id=xxx | データを配列で返します | [{"img": xxx, "原作": xxx, "キャスト": xxx, "制作元請": xxx, "放送スケジュール": xxx}]
 
 ## 動作環境 / OS
