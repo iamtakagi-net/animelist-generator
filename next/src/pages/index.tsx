@@ -2,24 +2,29 @@ import React, { useState } from "react";
 import { useClient } from "../hooks/client";
 import { useToasts } from "react-toast-notifications";
 import ThemeSwitch from "../components/ThemeSwitch";
+import { Animelist } from "../types/animelist";
 
 const IndexPage = () => {
   const toast = useToasts();
 
   const [url, setUrl] = useState("");
-  const [base64, setBase64] = useState("");
+  const [animelist, setAnimelist] = useState<Animelist | null>(null)
   const [isGenerating, setIsGenerating] = useState(false);
   const client = useClient();
 
   let image;
-  if (base64.length) {
-    image = <img src={`data:image/png;base64,${base64}`} className="mt-3" />;
+  let downloadButton;
+  if (animelist && animelist.base64Str && animelist.title) {
+    image = <img src={`data:image/png;base64,${animelist.base64Str}`} className="mt-3" />;
+    downloadButton = <a className="bg-gray-300 mt-2 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center" href={`data:image/png;base64,${animelist.base64Str}`} download={`${animelist.title}.png`}>ダウンロード</a>
   }
 
   let statusText;
   let button;
   if (isGenerating) {
     button = null;
+    downloadButton = null;
+    image = null;
     statusText = <p className="text-md">画像を生成しています...</p>;
   } else {
     button = (
@@ -30,7 +35,7 @@ const IndexPage = () => {
           client
             .generate(url)
             .then((data) => {
-              setBase64(data.base64str);
+              setAnimelist(data);
               setIsGenerating(false);
               toast.addToast("画像を生成しました", {
                 appearance: "success",
@@ -84,11 +89,14 @@ const IndexPage = () => {
 
             {button}
 
+            {downloadButton}
+
             {statusText}
           </div>
         </div>
 
         {image}
+
       </div>
     </div>
   );
