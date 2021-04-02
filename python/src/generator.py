@@ -286,13 +286,13 @@ def generate(url):
     
     im_bgr = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
     result, dst_data = cv2.imencode('.png', im_bgr)
-    base64str = base64.b64encode(dst_data)
+    base64Str = base64.b64encode(dst_data)
     title = ''.join(Title.splitlines())
     #filename = uuid.uuid4()
     #file_path = f"./img/{filename}.png"
     #plt.imsave(file_path, image)
     print(area_ + "\n</map>")
-    return base64str
+    return title, base64Str.decode('utf-8')
 
 if __name__ == '__main__':
     get_data(url = "https://www.animatetimes.com/tag/details.php?id=5228")

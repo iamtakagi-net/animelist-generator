@@ -31,8 +31,8 @@ def get_data():
 def generate():
      url = request.args.get('url')
      try:
-          base64str = generator.generate(url).decode('utf-8')
-          return jsonify({'base64str': base64str})
+          title, base64Str = generator.generate(url)
+          return jsonify({'title': title, 'base64Str': base64Str})
      except:
           return jsonify({'message': '無効なURL'}), 500
 

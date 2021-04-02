@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Animelist } from "../types/animelist";
 
 export class Client {
   public url: string;
@@ -15,7 +16,7 @@ export class Client {
   }
 
   async generate(url: string) {
-    const { data } = await this.client.get(`generate?url=${url}`);
+    const { data } = await this.client.get<Animelist>(`generate?url=${url}`);
     return data;
   }
 }
