@@ -1,4 +1,4 @@
-# 📰 animelist-generator: Japanese season animelist generator with web application.
+# 📰 アニメリストを生成するウェブアプリ
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/releases)
 [![Node.js](https://img.shields.io/badge/Node.js-14-blue)](https://nodejs.org)
