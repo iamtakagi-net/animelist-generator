@@ -12,10 +12,11 @@
 [animateTimes](https://www.animatetimes.com/) のページからデータを取得し クールごとのアニメリスト画像を生成するウェブアプリケーションです。\
 開発中のため 一部不具合があります。ご了承ください。
 
-[Cartelet0423/animeListGen](https://github.com/Cartelet0423/animeListGen) を元にウェブアプリケーションとして開発しています。
-
 ![chrome_5I4bimZ9Ak](https://user-images.githubusercontent.com/46530214/110240691-83e87580-7f90-11eb-8c99-3307aa0180a2.png)
 ![hmI1MPKwGI](https://user-images.githubusercontent.com/46530214/110240693-8519a280-7f90-11eb-9a86-7d50461700a2.png)
+
+## 謝辞
+[Cartelet0423/animeListGen](https://github.com/Cartelet0423/animeListGen) を元に ウェブアプリケーションとして開発しています。
 
 ## 例としてこのような画像を生成します
 参照画像が存在しない場合 サムネイルは空白となります。
