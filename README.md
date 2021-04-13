@@ -2,7 +2,7 @@
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/releases)
 [![Node.js](https://img.shields.io/badge/Node.js-14-blue)](https://nodejs.org)
-[![Python](https://img.shields.io/badge/Python-3.9.2-blue)](https://kotlinlang.org)
+[![Python](https://img.shields.io/badge/Python-3.9.2-blue)](https://ython.org)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/releases)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/iamtakagi/animelist-generator/CI)](https://github.com/iamtakagi/animelist-generator/actions/workflows/ci.yml)
 [![license](https://img.shields.io/github/license/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/blob/master/LICENSE)
