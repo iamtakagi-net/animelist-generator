@@ -7,7 +7,7 @@ import { Animelist } from "../types/animelist";
 const IndexPage = () => {
   const toast = useToasts();
 
-  const [url, setUrl] = useState<string | null>(null)
+  const [url, setUrl] = useState<string>("")
   const [animelist, setAnimelist] = useState<Animelist | null>(null)
   const [isGenerating, setIsGenerating] = useState(false);
   const client = useClient();
