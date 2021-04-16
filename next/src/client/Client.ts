@@ -5,7 +5,7 @@ export class Client {
   public url: string;
 
   constructor() {
-    this.url = "http://localhost:8000/api/";
+    this.url = "https://animelist-generator.iamtakagi.net/api/";
   }
 
   get client() {
