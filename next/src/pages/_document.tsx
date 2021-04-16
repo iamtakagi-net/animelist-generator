@@ -1,16 +1,16 @@
-import * as React from 'react'
+import * as React from "react";
 import NextDocument, {
   Html,
   Head,
   Main,
   NextScript,
   DocumentContext,
-} from 'next/document'
+} from "next/document";
 
 class Document extends NextDocument {
   static async getInitialProps(context: DocumentContext) {
-    const initialProps = await NextDocument.getInitialProps(context)
-    return { ...initialProps }
+    const initialProps = await NextDocument.getInitialProps(context);
+    return { ...initialProps };
   }
 
   render() {
@@ -77,8 +77,8 @@ class Document extends NextDocument {
           <NextScript />
         </body>
       </Html>
-    )
+    );
   }
 }
 
-export default Document
+export default Document;
