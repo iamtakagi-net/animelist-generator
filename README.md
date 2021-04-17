@@ -46,12 +46,4 @@ services:
     restart: always
     ports:
       - 3000:3000
-  nginx:
-    container_name: animelist-generator_nginx
-    image: iamtakagi/animelist-generator_nginx:latest
-    ports:
-      - 8086:80
-    environment:
-      TZ: Asia/Tokyo
-    restart: always
 ```
