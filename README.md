@@ -10,9 +10,6 @@ Generate the image of season-animelist based on the data fetched from [animateTi
 ![chrome_5I4bimZ9Ak](https://user-images.githubusercontent.com/46530214/110240691-83e87580-7f90-11eb-8c99-3307aa0180a2.png)
 ![hmI1MPKwGI](https://user-images.githubusercontent.com/46530214/110240693-8519a280-7f90-11eb-9a86-7d50461700a2.png)
 
-![chrome_kZaefnhGgX](https://user-images.githubusercontent.com/46530214/113428672-2968fa80-9412-11eb-917e-1f63b32a21d5.png)
-
-
 ## API Endpoints
 URL  | Description | Response Example 
 ---- | ---- | ----
