@@ -26,6 +26,7 @@
 ![chrome_cjY01mgHTI](https://user-images.githubusercontent.com/46530214/113428675-2a9a2780-9412-11eb-9ba6-44fbd7c9365c.png)
 
 - API Endpoints
+  - APIを提供しています
 URL  | Description | Response Example 
 ---- | ---- | ----
 /api/generate?url=https://www.animatetimes.com/tag/details.php?id=xxx | アニメリスト画像を生成してBase64で返します | {"title", xxx, "base64Str": xxx}
@@ -33,13 +34,9 @@ URL  | Description | Response Example
 
 ## Installation
 
-`:latest` master ブランチへのプッシュの際にビルドされます。安定しています。\
-`:dev` dev ブランチへのプッシュの際にビルドされます。開発版のため, 不安定である可能性があります。\
-`:<tag>` GitHub 上のリリースに対応します。
-
-```console
-touch docker-compose.yml
-```
+`:latest` for master branch
+`:dev` for dev branch 
+`:<tag>` for release tag
 
 `docker-compose.yml`
 ```yml
@@ -74,19 +71,4 @@ services:
     environment:
       TZ: Asia/Tokyo
     restart: always
-```
-
-```console
-# 起動 / Start
-docker-compose up -d
-
-# 停止 / Shutdown
-docker-compose down
-
-# ログ確認 / Logs
-docker-compose logs -f
-
-# 更新
-docker pull iamtakagi/animelist-generator_python:latest
-docker pull iamtakagi/animelist-generator_next:latest
 ```
