@@ -11,7 +11,7 @@ Generate the image of season-animelist based on the data fetched from [animateTi
 ![hmI1MPKwGI](https://user-images.githubusercontent.com/46530214/110240693-8519a280-7f90-11eb-9a86-7d50461700a2.png)
 
 ![chrome_kZaefnhGgX](https://user-images.githubusercontent.com/46530214/113428672-2968fa80-9412-11eb-917e-1f63b32a21d5.png)
-![chrome_cjY01mgHTI](https://user-images.githubusercontent.com/46530214/113428675-2a9a2780-9412-11eb-9ba6-44fbd7c9365c.png)
+
 
 ## API Endpoints
 URL  | Description | Response Example 
@@ -20,8 +20,8 @@ URL  | Description | Response Example
 /api/data?url=https://www.animatetimes.com/tag/details.php?id=xxx | Return Data | [{"img": xxx, "原作": xxx, "キャスト": xxx, "制作元請": xxx, "放送スケジュール": xxx}]
 
 ## Installation
-`:latest` for master branch
-`:dev` for dev branch 
+`:latest` for master branch\
+`:dev` for dev branch\
 `:<tag>` for release tag
 
 `docker-compose.yml`
