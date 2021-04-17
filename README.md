@@ -1,11 +1,10 @@
 # 📰 animelist-generator: Japanese animelist generator with web application.
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/releases)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/releases)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/iamtakagi/animelist-generator/CI)](https://github.com/iamtakagi/animelist-generator/actions/workflows/ci.yml)
-[![license](https://img.shields.io/github/license/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/blob/master/LICENSE)
-[![issues](https://img.shields.io/github/issues/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/issues)
-[![pull requests](https://img.shields.io/github/issues-pr/iamtakagi/animelist-generator)](https://github.com/iamtakagi/animelist-generator/pulls)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/iamtakagi-net/animelist-generator)](https://github.com/iamtakagi-net/animelist-generator/releases)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/iamtakagi-net/animelist-generator/CI)](https://github.com/iamtakagi-net/animelist-generator/actions/workflows/ci.yml)
+[![license](https://img.shields.io/github/license/iamtakagi-net/animelist-generator)](https://github.com/iamtakagi-net/animelist-generator/blob/master/LICENSE)
+[![issues](https://img.shields.io/github/issues/iamtakagi-net/animelist-generator)](https://github.com/iamtakagi-net/animelist-generator/issues)
+[![pull requests](https://img.shields.io/github/issues-pr/iamtakagi-net/animelist-generator)](https://github.com/iamtakagi-net/animelist-generator/pulls)
 
 [animateTimes](https://www.animatetimes.com/) のページからデータを取得し クールごとのアニメリスト画像を生成するウェブアプリケーションです。
 
