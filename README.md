@@ -26,7 +26,8 @@
 ![chrome_cjY01mgHTI](https://user-images.githubusercontent.com/46530214/113428675-2a9a2780-9412-11eb-9ba6-44fbd7c9365c.png)
 
 - API Endpoints
-  - APIを提供しています
+  - いくつかAPIを提供しています
+
 URL  | Description | Response Example 
 ---- | ---- | ----
 /api/generate?url=https://www.animatetimes.com/tag/details.php?id=xxx | アニメリスト画像を生成してBase64で返します | {"title", xxx, "base64Str": xxx}
