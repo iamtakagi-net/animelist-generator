@@ -1,4 +1,4 @@
-# 📰 animelist-generator: Japanese animelist generator with web application.
+# 📰 animelist-generator: Generate the image of season-animelist.
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/iamtakagi-net/animelist-generator)](https://github.com/iamtakagi-net/animelist-generator/releases)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/iamtakagi-net/animelist-generator/CI)](https://github.com/iamtakagi-net/animelist-generator/actions/workflows/ci.yml)
 [![license](https://img.shields.io/github/license/iamtakagi-net/animelist-generator)](https://github.com/iamtakagi-net/animelist-generator/blob/master/LICENSE)
