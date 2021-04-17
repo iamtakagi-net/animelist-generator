@@ -81,7 +81,7 @@ const IndexPage = () => {
           <p className="text-sm">
             {" "}
             <a href="https://www.animatetimes.com/">アニメイトタイムズ</a>{" "}
-            からデータを取得して画像を生成します
+            から取得したデータをもとに画像を生成します
           </p>
 
           <div className="space-x-4 pt-1">
