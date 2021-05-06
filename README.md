@@ -49,3 +49,6 @@ services:
     ports:
       - 3000:3000
 ```
+
+## LICENSE
+iamtakagi-net/animelist-generator is provided under the MIT license.
