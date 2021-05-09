@@ -1,5 +1,5 @@
 # animelist-generator
-📰 アニメリストを生成するWebアプリ
+📰 アニメリストを生成するWebアプリ\
 [animateTimes](https://www.animatetimes.com/) からデータを取得 -> アニメリスト画像を生成します。
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/iamtakagi-net/animelist-generator)](https://github.com/iamtakagi-net/animelist-generator/releases)
