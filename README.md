@@ -1,6 +1,6 @@
 # animelist-generator
-📰 Generate the image of season-animelist.\
-Generate the image of season-animelist based on the data fetched from [animateTimes](https://www.animatetimes.com/) 
+📰 アニメリストを生成するWebアプリ
+[animateTimes](https://www.animatetimes.com/) からデータを取得 -> アニメリスト画像を生成します。
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/iamtakagi-net/animelist-generator)](https://github.com/iamtakagi-net/animelist-generator/releases)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/iamtakagi-net/animelist-generator/CI)](https://github.com/iamtakagi-net/animelist-generator/actions/workflows/ci.yml)
