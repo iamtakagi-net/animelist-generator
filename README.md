@@ -57,4 +57,4 @@ url | データを返却します | [{"img": xxx, "原作": xxx, "キャスト":
 ![hmI1MPKwGI](https://user-images.githubusercontent.com/46530214/110240693-8519a280-7f90-11eb-9a86-7d50461700a2.png)
 
 ## LICENSE
-iamtakagi-net/animelist-generator is provided under the MIT license.
+iamtakagi/animelist-generator is provided under the MIT license.
